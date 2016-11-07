@@ -1,0 +1,164 @@
+﻿<Window x:Class="gShoppersSTORE.stu_credit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gShoppersSTORE"
+        mc:Ignorable="d"
+        Title="stu_credit" Width="1919.7" Height="1057" WindowState="Maximized" >
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <Grid Width="1366" Height="724" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Rectangle Fill="#FF1D8DEA" HorizontalAlignment="Left" Height="60" Margin="-275,1,-272,0" VerticalAlignment="Top" Width="1913"/>
+                <Button Margin="1306,12,24,673" Click="settings">
+                    <Button.Effect>
+                        <DropShadowEffect ShadowDepth="0" Color="White" BlurRadius="3"/>
+                    </Button.Effect>
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Image Source="Assects/Menu icons/settings.png"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Margin="19,12,1303,665" Click="back" RenderTransformOrigin="-18.727,1.375">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Image Source="Assects/Menu icons/back.png"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <TextBox x:Name="userq" HorizontalAlignment="Left" Height="24" Margin="1126,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="16" IsEnabled="False"/>
+                <TextBox x:Name="welcome" HorizontalAlignment="Left" Height="24" Margin="1053,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="16" IsEnabled="False" Text="Welcome," RenderTransformOrigin="0.5,0.5">
+                    <TextBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="0.483"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="0.325"/>
+                        </TransformGroup>
+                    </TextBox.RenderTransform>
+                </TextBox>
+                <Rectangle Fill="#FF6C6C6C" HorizontalAlignment="Left" Height="448" Margin="-27,60,-2,0" VerticalAlignment="Top" Width="1395" RenderTransformOrigin="0.5,0.5">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="2.911"/>
+                            <RotateTransform/>
+                            <TranslateTransform X="11.949"/>
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Label x:Name="label" Content="Student Credit Entry" HorizontalAlignment="Left" Margin="455,80,0,0" VerticalAlignment="Top" FontSize="40" Background="{x:Null}" Foreground="White" RenderTransformOrigin="0.5,0.5" >
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="2.911"/>
+                            <RotateTransform/>
+                            <TranslateTransform X="11.949"/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Grid Margin="315,184,341,255">
+                    <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="37" Margin="0,2,0,0" TextWrapping="Wrap" Text="Member Id" VerticalAlignment="Top" Width="206" FontSize="20" Background="#FF9E9E9E" Foreground="White" SelectionBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" TextChanged="textBox_TextChanged">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="2.911"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="11.949"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <TextBox x:Name="name" HorizontalAlignment="Left" Height="38" Margin="243,0,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="206" FontSize="20" Background="#FF9E9E9E" Foreground="White" SelectionBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" IsEnabled="False">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="2.911"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="11.949"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <TextBox x:Name="std" HorizontalAlignment="Left" Height="38" Margin="483,0,0,0" TextWrapping="Wrap" Text="Class" VerticalAlignment="Top" Width="206" FontSize="20" Background="#FF9E9E9E" Foreground="White" SelectionBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" IsEnabled="False">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="2.911"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="11.949"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <TextBox x:Name="amt" HorizontalAlignment="Left" Height="60" Margin="63,66,0,0" TextWrapping="Wrap" Text="0.0" VerticalAlignment="Top" Width="633" FontSize="35" Background="#FF9E9E9E" Foreground="White" SelectionBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Padding="10,0,0,0">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="2.911"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="11.949"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <Rectangle Fill="#FFF0F0F0" HorizontalAlignment="Left" Height="61" Margin="7,65,0,0" VerticalAlignment="Top" Width="56" RenderTransformOrigin="0.5,0.5">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="2.911"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="11.949"/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Image x:Name="image" HorizontalAlignment="Left" Height="38" Margin="33,78,0,0" VerticalAlignment="Top" Width="26" Source="Assects\rupee.png" Opacity="0.5"/>
+                    <TextBox x:Name="via" HorizontalAlignment="Left" Height="48" Margin="81,156,0,0" TextWrapping="Wrap" Text="Cash" VerticalAlignment="Top" Width="387" FontSize="25" Background="#FF9E9E9E" Foreground="White" SelectionBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Padding="6,4,0,0">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="2.911"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="11.949"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <Label x:Name="label_Copy" Content="Via" HorizontalAlignment="Left" Margin="23,158,0,0" VerticalAlignment="Top" FontSize="25" Background="{x:Null}" Foreground="#FFC1C1C1" RenderTransformOrigin="0.5,0.5" >
+                        <Label.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="2.911"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="11.949"/>
+                            </TransformGroup>
+                        </Label.RenderTransform>
+                    </Label>
+                    <Button x:Name="button" Content="Make Entry" Margin="30,235,0,0" VerticalAlignment="Top" Height="50" FontSize="20" RenderTransformOrigin="0.5,0.5" Background="#FF515151" BorderBrush="{x:Null}" Foreground="White" Click="button_Click" HorizontalAlignment="Left" Width="680">
+                        <Button.Effect>
+                            <DropShadowEffect Color="White" BlurRadius="8" Direction="0" RenderingBias="Quality" ShadowDepth="0"/>
+                        </Button.Effect>
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="2.911"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="11.99"/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                    </Button>
+                    <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="180" Margin="33,338,0,-233" VerticalAlignment="Top" Width="200" Source="Assects\stu_credit.png" Opacity="0.5"/>
+                    <TextBox x:Name="reciept" HorizontalAlignment="Left" Height="46" Margin="477,157,0,0" TextWrapping="Wrap" Text="Receipt No." VerticalAlignment="Top" Width="221" FontSize="20" Background="#FF9E9E9E" Foreground="White" SelectionBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" TextChanged="textBox_TextChanged">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="2.911"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="11.949"/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+
+                </Grid>
+                <DatePicker x:Name="datapicker" HorizontalAlignment="Left" Margin="1058,260,0,0" VerticalAlignment="Top" Height="28" Width="132" SelectedDateFormat="Short" IsEnabled="False" FontSize="15" BorderBrush="{x:Null}" Foreground="Black"/>
+
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</Window>

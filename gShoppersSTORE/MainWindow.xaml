@@ -1,0 +1,45 @@
+﻿<Window x:Class="gShoppersSTORE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gShoppersSTORE"
+        mc:Ignorable="d"
+        Title="Login" Height="1090" Width="1776" WindowStyle="ToolWindow" BorderThickness="0" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized" Background="White">
+
+    <Grid Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="464" Width="360" Background="#FF0C95E4">
+        <Grid.Effect>
+            <DropShadowEffect ShadowDepth="0" Color="#FFD4D3D3" BlurRadius="30"/>
+        </Grid.Effect>
+
+        <TextBox x:Name="txt1" HorizontalAlignment="Left"  Height="36" Padding="2px,2px,2px,2px" Margin="73,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="239" FontFamily="Segoe UI Light" FontSize="20" Background="#FFF7F7F7" Foreground="#FF0C95E4" FontWeight="Light"  BorderBrush="{x:Null}" >
+            <TextBox.Effect>
+                <DropShadowEffect ShadowDepth="0" Color="#FFD6D3D3" BlurRadius="10"/>
+            </TextBox.Effect>
+        </TextBox>
+        <PasswordBox x:Name="tex2" HorizontalAlignment="Left" Margin="73,313,0,0" VerticalAlignment="Top" Width="239" Height="32" Foreground="#FF0C95E4" FontSize="20" BorderBrush="{x:Null}"/>
+        <Image x:Name="user_alt_128_png" Margin="280,257,52,178" Source="Assects/user-alt-128.png" Stretch="Fill"/>
+        <Label x:Name="label" Content="Gurukul Arts" HorizontalAlignment="Left" Margin="384,581,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Mistral" FontSize="20">
+
+        </Label>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="204" Margin="96,24,0,0" VerticalAlignment="Top" Width="204" Source="Assects/Profile.png"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="54" Margin="116,-116,0,0" VerticalAlignment="Top" Width="142" Source="Assects/LOGO.png"/>
+        <Label x:Name="label3" Content="• Responsive GUI (Graphic User Interface)." HorizontalAlignment="Left" Margin="436,27,-450,0" VerticalAlignment="Top" Width="374" FontSize="16" Foreground="#FF8F8F8F" FontFamily="Segoe UI Light" Height="40"/>
+        <Label x:Name="label3_Copy" Content="• User friendly." HorizontalAlignment="Left" Margin="436,87,-450,0" VerticalAlignment="Top" Width="374" FontSize="16" Foreground="#FF8F8F8F" FontFamily="Segoe UI Light" Height="40"/>
+        <Label x:Name="label3_Copy1" Content="• Makes all the Stuff Easy." HorizontalAlignment="Left" Margin="436,147,-450,0" VerticalAlignment="Top" Width="374" FontSize="16" Foreground="#FF8F8F8F" FontFamily="Segoe UI Light" Height="40"/>
+        <Label x:Name="label3_Copy2" Content="• Exclusively for WINDOWS 10." HorizontalAlignment="Left" Margin="436,209,-450,0" VerticalAlignment="Top" Width="374" FontSize="16" Foreground="#FF8F8F8F" FontFamily="Segoe UI Light" Height="40"/>
+        <Label x:Name="label3_Copy3" Content="• Powered by Gurukul Arts." HorizontalAlignment="Left" Margin="436,401,-450,0" VerticalAlignment="Top" Width="374" FontSize="16" Foreground="#FF8F8F8F" FontFamily="Segoe UI Light" Height="40"/>
+        <Label x:Name="label3_Copy4" Content="• Designed &amp; Developed by Gurukul Arts HYD" HorizontalAlignment="Left" Margin="436,335,-450,0" VerticalAlignment="Top" Width="374" FontSize="16" Foreground="#FF8F8F8F" FontFamily="Segoe UI Light" Height="40"/>
+        <Label x:Name="label3_Copy5" Content="• With great compatibility. " HorizontalAlignment="Left" Margin="436,268,-450,0" VerticalAlignment="Top" Width="374" FontSize="16" Foreground="#FF8F8F8F" FontFamily="Segoe UI Light" Height="40"/>
+        <Button x:Name="button" Content="LOGIN" HorizontalAlignment="Left" Margin="140,376,0,0" VerticalAlignment="Top" Width="96" Height="36" Background="{x:Null}" BorderBrush="White" Foreground="White" Click="button_Click"/>
+        <Button x:Name="button_Copy" Content="Forget Password &gt;&gt;" HorizontalAlignment="Left" Margin="267,448,0,0" VerticalAlignment="Top" Width="93" Height="16" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="button_Copy_Click" FontSize="9.333"/>
+
+        <Label x:Name="label3_Copy6" Content="V.1.0.1" HorizontalAlignment="Left" Margin="-1,470,0,-25" VerticalAlignment="Top" Width="30" FontSize="8" Foreground="#FF8F8F8F" FontFamily="Segoe UI Light" Height="19"/>
+        <Image x:Name="passwordicon_png" Margin="282,316,53,123" Source="Assects/passwordicon.png" Stretch="Fill"/>
+
+
+
+    </Grid>
+
+
+</Window>
